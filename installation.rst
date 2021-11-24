@@ -108,7 +108,8 @@ Installation on amazon EC2, looks like red hat version of linux
         $ cd bots-3.2.0
         $ sudo python setup.py install
         $ cd ..
-        #set rigths for bots directory to non-root:
+        #set rights for bots directory to non-root:
+        ## the latest installer places these files in /usr/local/bin and chmods the files so this step may not be necessary
         $ sudo chown -R myusername /usr/lib/python2.7/site-packages/bots
 
         #start up bots-webserver:
