@@ -40,7 +40,7 @@ Use Apache2 as Webserver
         WSGISocketPrefix /var/run/wsgi
 
         <VirtualHost \*:{PORT}>
-           WSGIScriptAlias /{PATH TO UR HOME}/bots_app/bots.wsgi
+           WSGIScriptAlias / /{PATH TO UR HOME}/bots_app/bots.wsgi
            WSGIDaemonProcess config user={System User} group={System User Group}
            WSGIProcessGroup config
    
